@@ -1,4 +1,4 @@
-eateimport { Request, Response, NextFunction } from 'express';
+import { Request, Response, NextFunction } from 'express';
 
 // No-op rate limiting middleware (disabled)
 export const authRateLimit = (req: Request, res: Response, next: NextFunction) => {
