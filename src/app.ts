@@ -16,7 +16,7 @@ app.use(helmet());
 
 // CORS configuration
 app.use(cors({
-  origin: env.CORS_ORIGIN,
+  origin: true, // Allow all origins
   credentials: true
 }));
 
