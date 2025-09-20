@@ -3,7 +3,7 @@ import rateLimit from 'express-rate-limit';
 // Rate limit for authentication endpoints
 export const authRateLimit = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 5, // Limit each IP to 5 requests per windowMs
+  max: 200, // Limit each IP to 20 requests per windowMs (increased for development)
   message: {
     error: {
       code: 'RATE_LIMITED',
